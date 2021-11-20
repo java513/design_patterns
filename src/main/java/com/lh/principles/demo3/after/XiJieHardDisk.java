@@ -1,0 +1,19 @@
+package com.lh.principles.demo3.after;
+
+/**
+ * @ClassName XiJieHardDisk
+ * @Desc //
+ * @Author mi
+ * @Date 2021/6/13 12:45
+ */
+public class XiJieHardDisk implements HardDisk{
+    @Override
+    public void save(String data) {
+        System.out.println("使用希捷硬盘存储数据" + data);
+    }
+    @Override
+    public String get() {
+        System.out.println("使用希捷希捷硬盘取数据");
+        return "数据";
+    }
+}
